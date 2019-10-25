@@ -1,0 +1,15 @@
+program Browser_Proj;
+
+uses
+  Forms,
+  Browser in 'Browser.pas' {FrmBrowser},
+  unPaginaInicial in 'unPaginaInicial.pas' {FrmPaginaInicial};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TFrmBrowser, FrmBrowser);
+  Application.CreateForm(TFrmPaginaInicial, FrmPaginaInicial);
+  Application.Run;
+end.
